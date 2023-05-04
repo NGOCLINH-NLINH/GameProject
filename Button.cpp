@@ -6,11 +6,12 @@ Button::Button()
 	  texture(NULL),
 	  buttonRect({ 0, 0, 0, 0 }),
 	  textureRect({0, 0, 0, 0}),
+	  selected(0),
 	  mouseOutColour({ 186,195,196,255 }), // light grey
 	  mouseOverMotionColour({ 146,197,244,255 }),//blue
 	  mouseDownColour({ 252,219,119,255 }), // yellow
-	  mouseUpColour({ 146,197,244,255 }), // blue
-	  selected(0)
+	  mouseUpColour({ 146,197,244,255 }) // blue
+
 {}
 
 
@@ -92,12 +93,12 @@ ButtonState Button::getMouseEvent(const SDL_Event* event)
 }
 
 void Button::renderButton(SDL_Renderer* renderer){
-	// If current button is selected
+
 	if (selected){
 		SDL_SetRenderDrawColor(renderer, mouseDownColour.r, mouseDownColour.g, mouseDownColour.b, mouseDownColour.a);
 	}
 	else{
-		// Show current button State
+
 		switch (currentState)
 		{
 		case ButtonState::BUTTON_MOUSE_OUT:

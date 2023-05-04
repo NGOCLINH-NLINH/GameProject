@@ -35,7 +35,6 @@ void Cell::setEditable(const bool editable){
 
 void Cell::handleKeyboardEvent(const SDL_Event* event, SDL_Texture* textureCache[], int correctNum, int& mistakeFlag){
 	int cnt = 0;
-
 	if (event->key.keysym.sym == SDLK_BACKSPACE && CharNumber != ' '){
 		CharNumber = ' ';
 		setTexture(textureCache[0]);
@@ -55,5 +54,4 @@ void Cell::handleKeyboardEvent(const SDL_Event* event, SDL_Texture* textureCache
 
 	}
 	mistakeFlag = cnt;
-
 }
