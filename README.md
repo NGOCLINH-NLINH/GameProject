@@ -19,10 +19,8 @@ You have 3 hints each time.
 - Step 3: Install and set up SDL_image.
 - Step 4: Install and set up SDL_ttf.
 - Step 5: Download the source code and extract it.
-- Step 6: Create a new (empty) project in Code::Blocks, in "Folder to create project in: ", select the extracted game folder.
-- Step 7: Using the navigation pane on the left, right-click on the project and choose "Add files..."
-- Step 8: Select all source files as well as header files.
-- Step 9: Click "Build and run"
+- Step 6: Open Sudoku.cbp in Code::Blocks.
+- Step 7: Click "Build and run"
 
 ## License
 
