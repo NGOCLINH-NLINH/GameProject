@@ -19,8 +19,9 @@ You have 3 hints each time.
 - Step 3: Install and set up SDL_image.
 - Step 4: Install and set up SDL_ttf.
 - Step 5: Download the source code and extract it.
-- Step 6: Open Sudoku.cbp in Code::Blocks.
-- Step 7: Click "Build and run"
+- Step 6: Add SDL.dll, SDL_image.dll and SDL_ttf.dll to the extracted folder.
+- Step 7: Open Sudoku.cbp in Code::Blocks.
+- Step 8: Click "Build and run".
 
 ## License
 
